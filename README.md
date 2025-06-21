@@ -1,93 +1,89 @@
-The Expense Tracker program is a simple, interactive Python application designed to help users track, manage, and analyze their personal expenses. It uses CSV files to store and load data and supports various functions like viewing summaries, adding new expenses, filtering data, visualizing expenses, and exporting reports.
+The Expense Tracker program is a simple, interactive Python application designed to help users track, manage, and analyze their personal expenses.
+It uses CSV files to store and load data and supports various functions like viewing summaries, adding new expenses, filtering data, visualizing expenses, and exporting reports.
+
 For Run 
 Make sure you have the required libraries installed:
 
-pip install pandas numpy matplotlib
+  • pip install pandas numpy matplotlib
 
 Create an expenses.csv file in the same directory with columns: Date, Category, Amount, Description. Example:
-Date,Category,Amount,Description
-2024-01-05,Food,15.50,Lunch at cafe
-2024-01-07,Transport,8.20,Bus ticket
-2024-01-09,Entertainment,20.00,Movie ticket
+
+  • Date,Category,Amount,Description
+  • 2024-01-05,Food,15.50,Lunch at cafe
+  • 2024-01-07,Transport,8.20,Bus ticket
+  • 2024-01-09,Entertainment,20.00,Movie ticket
+
 Run the script:
-python expense_tracker.py
-Then use the menu to explore features.
+   • python expense_tracker.py
+   • Then use the menu to explore features.
 
-🔧 Features of the Expense Tracker:
-Load Expenses from CSV
+🔧 FEATURE OF THE EXPENSE TRACKERS:
 
-Reads an expenses.csv file.
+1. Load Expenses from CSV
 
-Ensures required columns (Date, Category, Amount, Description) are present.
+      • Reads an expenses.csv file.
+      • Ensures required columns (Date, Category, Amount, Description) are present.
+      • Cleans and prepares the data for analysis.
 
-Cleans and prepares the data for analysis.
+2. Add New Expense
 
-Add New Expense
+• Allows users to enter a new expense by specifying:
+             • Date
+             • Category
+             • Amount
+             • Description
+             
+• Appends the new entry to the CSV file.
 
-Allows users to enter a new expense by specifying:
 
-Date
+3. Total Spending Overview
 
-Category
+   • Calculates and displays:
 
-Amount
+      • Total amount spent.
+      • The highest single expense.
+      • The lowest single expense.
 
-Description
+   
+ 4. Category-wise Analysis
 
-Appends the new entry to the CSV file.
+ •Groups expenses by category.
 
-Total Spending Overview
+   • Displays:
+      • Total spent in each category.
+      • Number of transactions per category.
+      • Percentage of total expenses per category.
 
-Calculates and displays:
 
-Total amount spent.
+5. Filter Expenses by Date
 
-The highest single expense.
+    • Allows filtering expenses between a user-specified start and end date.
 
-The lowest single expense.
+    • Useful for analyzing spending over specific time periods.
 
-Category-wise Analysis
+6. Pie Chart Visualization (optional)
 
-Groups expenses by category.
+      • Plots a pie chart of expenses by category using Matplotlib.
 
-Displays:
+7. Export Summary Report
 
-Total spent in each category.
+      • Exports a category-wise expense summary to a summary_report.csv file.
 
-Number of transactions per category.
+8. Menu-driven Interface
 
-Percentage of total expenses per category.
+    • Easy-to-navigate command-line interface.
 
-Filter Expenses by Date
-
-Allows filtering expenses between a user-specified start and end date.
-
-Useful for analyzing spending over specific time periods.
-
-Pie Chart Visualization (optional)
-
-Plots a pie chart of expenses by category using Matplotlib.
-
-Export Summary Report
-
-Exports a category-wise expense summary to a summary_report.csv file.
-
-Menu-driven Interface
-
-Easy-to-navigate command-line interface.
-
-Users choose actions by entering numbers from a menu.
+    • Users choose actions by entering numbers from a menu.
 
 🧰 Tools/Libraries Used:
-pandas for data handling
 
-numpy for numerical operations
+• pandas for data handling
+• numpy for numerical operations
+• matplotlib for plotting
+• Standard Python libraries like datetime, os
 
-matplotlib for plotting
 
-Standard Python libraries like datetime, os
-
-For INPUT / OUTPUT
+• INPUT / OUTPUT
 
 Select an option:
 1. View total spending overview      
