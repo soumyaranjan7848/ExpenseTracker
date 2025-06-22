@@ -1,10 +1,18 @@
+
+
+
+                                                         ExpenseTracker
+ 
+
+
+
 The Expense Tracker program is a simple, interactive Python application designed to help users track, manage, and analyze their personal expenses.
 It uses CSV files to store and load data and supports various functions like viewing summaries, adding new expenses, filtering data, visualizing expenses, and exporting reports.
 
 For Run 
 Make sure you have the required libraries installed:
 
-  • pip install pandas numpy matplotlib
+         • pip install pandas numpy matplotlib
 
 Create an expenses.csv file in the same directory with columns: Date, Category, Amount, Description. Example:
 
@@ -17,7 +25,7 @@ Run the script:
    • python expense_tracker.py
    • Then use the menu to explore features.
 
-🔧 FEATURE OF THE EXPENSE TRACKERS:
+    🔧 FEATURE OF THE EXPENSE TRACKERS:
 
 1. Load Expenses from CSV
 
@@ -75,15 +83,18 @@ Run the script:
 
     • Users choose actions by entering numbers from a menu.
 
-🧰 Tools/Libraries Used:
+        🧰 Tools/Libraries Used:
 
 • pandas for data handling
+
 • numpy for numerical operations
+
 • matplotlib for plotting
+
 • Standard Python libraries like datetime, os
 
 
-• INPUT / OUTPUT
+     • INPUT / OUTPUT
 
 Select an option:
 1. View total spending overview      
